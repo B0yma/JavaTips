@@ -1,0 +1,2 @@
+Mat roi = new Mat(fon, new Rect(1,0,croped.size().width(),croped.size().height()));
+img.copyTo(roi);
