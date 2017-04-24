@@ -1,0 +1,14 @@
+String filesdir  = "./img";
+        System.out.println("testfilesdir:"+filesdir);
+        File filesdirf = new File(filesdir);
+        File[] files = filesdirf.listFiles();
+        //System.out.println(fList.length);
+        for (File file : files){
+            if (file.isFile()){
+                System.out.println(file.getName());
+            }
+        }
+
+        for (File file : files){
+            cutStgsFromImg(file,file.getName());
+        }
